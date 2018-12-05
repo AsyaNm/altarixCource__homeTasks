@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-import './normalize.scss'
 import './App.scss';
 import { NewButton } from "./Components/NewButton/NewButton";
 import {Header} from "./Components/Header/Header";
+import {Message} from "./Components/Message/Message";
 import {Footer} from "./Components/Footer/Footer";
 
 class App extends Component {
@@ -12,7 +12,10 @@ class App extends Component {
     super();
     this.state = {
       list: [], // Чтобы запросить данные из localStorage'а нужно использовать JSON.parse
+      id:'5',
       name: 'AsyaNm',
+      text: 'text message example',
+      isOutgoing: true // Флаг для отметки своих сообщений
     };
   }
 
@@ -27,12 +30,22 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header  name={this.state.name}/>
-          <div className="page-content">
-            <NewButton value="New" handleClick={this.addItemToList.bind(this)}/>
-          </div>
-          {this.renderList()}
-          <Footer/>
+        <Header name={this.state.name}/>
+        <NewButton value="New" handleClick={this.addItemToList.bind(this)}/>
+        {this.renderList()}
+        <div className="page-content">
+          <Message
+              name={this.state.name}
+              text={this.state.text}
+              id={this.state.id}
+          />
+          <Message
+              name={this.state.name}
+              text={this.state.text}
+              id={this.state.id}
+          />
+        </div>
+        <Footer/>
       </div>
     );
   }

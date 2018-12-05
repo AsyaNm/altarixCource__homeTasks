@@ -2,6 +2,7 @@ import {Component} from 'react';
 import './Footer.scss';
 import React from "react";
 import {ButtonSend} from "../ButtonSend/ButtonSend";
+import {TextareaSend} from "../TextareaSend/TextareaSend";
 
 export class Footer extends Component {
   render() {
@@ -9,7 +10,7 @@ export class Footer extends Component {
         <footer className="main-footer">
           <form id="sendMessage" action="" >
             <input type="hidden" value="0"/>
-            <textarea form="sendMessage" className="field-message" wrap="soft" placeholder="Enter your message" name="field-message"></textarea>
+            <TextareaSend id="sendMessage"/>
             <div className="btn-container">
               <ButtonSend />
             </div>

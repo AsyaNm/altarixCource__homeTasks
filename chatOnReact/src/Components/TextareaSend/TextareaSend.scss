@@ -1,0 +1,15 @@
+@import "../../sass/vars.scss";
+
+.TextareaSend {
+    width: 90%;
+    height: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid $wetAsphalt;
+
+    &:focus, &:active {
+        border-left: 1px solid $wetAsphalt;
+        border-top: 1px solid $wetAsphalt;
+        border-right: 1px solid $lemonTree;
+        border-bottom: 1px solid $lemonTree;
+    }
+}

@@ -1,5 +1,6 @@
-@import "fonts";
-@import "vars";
+@import "./sass/fonts";
+@import "./sass/vars";
+@import "./sass/normalize.scss";
 
 .App {
     display: flex;
@@ -15,14 +16,14 @@
 
     .page-content {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
         width: calc(100vw - 40px);;
         min-height: calc(100vh - 285px);
+        padding: 20px;
         height: auto;
         background-color: transparent;
         overflow-y: visible;
-        padding: 20px;
     }
 }

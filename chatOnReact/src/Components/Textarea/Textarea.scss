@@ -1,0 +1,26 @@
+@import "../../sass/vars.scss";
+
+.Textarea {
+    min-width: 60px;
+    min-height: 10px;
+    width: auto;
+    height: auto;
+    resize: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid $lightGray;
+
+    //если сообщение чужое
+    //border-left: 1px solid $lemonTree;
+    //border-top: 1px solid $lemonTree;
+
+    //если сообщение моё
+    border-right: 1px solid $lemonTree;
+    border-bottom: 1px solid $lemonTree;
+    padding: 5px;
+
+    &:focus, &:active {
+        outline: none;
+    }
+}
