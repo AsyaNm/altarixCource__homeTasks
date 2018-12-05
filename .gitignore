@@ -1,0 +1,26 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/chatOnReact/node_modules
+/chatOnReact/package-lock.json
+/chatOnReact//.pnp
+/chatOnReact/.pnp.js
+
+# testing
+/chatOnReact//coverage
+
+# production
+/chatOnReact/build
+
+# misc
+/chatOnReact/.DS_Store
+/chatOnReact/.env.local
+/chatOnReact/.env.development.local
+/chatOnReact/.env.test.local
+/chatOnReact/.env.production.local
+
+npm-debug.log*
+/chatOnReact/yarn-debug.log*
+/chatOnReact/yarn-error.log*
+
+.idea

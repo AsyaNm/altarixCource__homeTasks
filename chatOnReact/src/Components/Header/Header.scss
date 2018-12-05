@@ -1,0 +1,16 @@
+@import "../../vars.scss";
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $black;
+    width: calc(100% - 40px);
+    height: 75px;
+    font-size: 18px;
+    font-family: $robotoBold;
+    color: $lemonTree;
+    padding-left: 40px;
+    box-sizing: content-box;
+}

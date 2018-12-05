@@ -1,0 +1,17 @@
+@import "../../vars";
+
+.Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $lemonTree;
+    color: $white;
+    min-width: 80px;
+    min-height: 40px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}

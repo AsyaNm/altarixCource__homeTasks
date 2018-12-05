@@ -1,0 +1,28 @@
+@import "fonts";
+@import "vars";
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: $wetAsphalt;
+    color: $whiteClay;
+    font-family: $robotoReg;
+    font-size: 14px;
+
+    .page-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: calc(100vw - 40px);;
+        min-height: calc(100vh - 285px);
+        height: auto;
+        background-color: transparent;
+        overflow-y: visible;
+        padding: 20px;
+    }
+}
